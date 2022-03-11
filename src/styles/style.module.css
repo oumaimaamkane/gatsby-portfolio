@@ -684,3 +684,19 @@ button {
   position: relative;
   top: 15%;
 }
+/**Featured Work**/
+.featured-work {
+  margin : 2em 2em 2em 2em;
+}
+.featured-work h1 {
+  text-align: center;
+}
+.featured-work h1 {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.featured-work h6{
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 600;
+}

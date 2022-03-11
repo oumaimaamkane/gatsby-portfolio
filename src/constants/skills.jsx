@@ -22,19 +22,19 @@ const Skills = ()=>{
                     <div className="col-lg-6" style={{paddingLeft:'2em'}}>
                         <h4>Coding Skills</h4>
                             {coding.map((item) => (
-                                <>
+                                <div key={item.id}>
                                 <span style={{marginBottom:20}}>{item.title}</span>
-                                <ProgressBar key={item.id} bgcolor={item.bgcolor} completed={item.completed} />
-                                </>
+                                <ProgressBar  bgcolor={item.bgcolor} completed={item.completed} />
+                                </div>
                             ))}
                     </div>
                     <div className="col-lg-6">
                         <h4>Design Skills</h4>
                         {design.map((item) => (
-                            <>
+                            <div key={item.id}>
                                 <span>{item.title}</span>
-                                <ProgressBar key={item.id} bgcolor={item.bgcolor} completed={item.completed} />
-                            </>
+                                <ProgressBar bgcolor={item.bgcolor} completed={item.completed} />
+                            </div>
                         ))}
                     </div>
                 </div>
