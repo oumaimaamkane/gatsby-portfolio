@@ -8,6 +8,7 @@ import Service from "../constants/services";
 import Skills from "../constants/skills";
 import Funfact from "../components/Funfact";
 import FeaturedWork from "../components/featuredWork";
+import Parallex from "../constants/parallex";
 
 const Home = () =>{
   return(
@@ -23,7 +24,7 @@ const Home = () =>{
       <meta name="msapplication-TileColor" content="#da532c"/>
       <meta name="theme-color" content="#ffffff"/> 
       <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
     </Helmet>
         <Header/>
         <Banner/>
@@ -32,6 +33,8 @@ const Home = () =>{
         <Skills/>
         <Funfact/>
         <FeaturedWork/>
+        <Parallex/>
+
     </>
   );
 }

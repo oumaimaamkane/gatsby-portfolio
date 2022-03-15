@@ -18,7 +18,7 @@ const Skills = ()=>{
         <div className={Styles.skills}>
             <h1>My Skills</h1>
             <h5>Professional Skills</h5>
-                <div className="row">
+                <div className="row" style={{width:'100%'}}>
                     <div className="col-lg-6" style={{paddingLeft:'2em'}}>
                         <h4>Coding Skills</h4>
                             {coding.map((item) => (
