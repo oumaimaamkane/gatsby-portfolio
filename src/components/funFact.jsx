@@ -7,15 +7,15 @@ const Funfact = () =>{
         <div className={Styles.funFact}>
             <h1>Fun Facts</h1>
             <div className={classNames('row' , Styles.parallax)} style={{width:'100%'}}>
-                <div className="col-lg-4" style={{borderRight:"2px solid var(--primary-color)"}}>
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{borderRight:"2px solid var(--primary-color)"}}>
                     <span><CountUp end={4} duration={9}/></span>
                     <h6>Happy Clients</h6>
                 </div>
-                <div className="col-lg-4" style={{borderRight:"2px solid var(--primary-color)"}}>
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{borderRight:"2px solid var(--primary-color)"}}>
                     <span><CountUp end={5} duration={9}/></span>
                     <h6>Completed Projects</h6>
                 </div>
-                <div className="col-lg-4" style={{borderRight:"2px solid var(--primary-color)"}}>
+                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{borderRight:"2px solid var(--primary-color)"}}>
                     <span><CountUp end={800} duration={9}/></span>
                     <h6>Working Hours</h6>
                 </div>

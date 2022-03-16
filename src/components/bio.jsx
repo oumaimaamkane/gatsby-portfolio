@@ -31,10 +31,10 @@ const Bio = () => {
                 <section className={Styles.whoIam}>
                 <h2>Who I am</h2>
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <StaticImage src="../images/personal-pic.png" alt="oumaima" style={{width:"600px" , marginTop:"-25px" , marginLeft:"20px"}}/>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <h3>About Me</h3>
                             <p>
                             I'm Oumaima ,web developer and my job is to <span>create</span> awesome websites and web apps characterized by <span>high</span> quality and <span>new ideas and concepts</span>. 

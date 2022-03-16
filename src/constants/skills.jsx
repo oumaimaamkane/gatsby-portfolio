@@ -19,7 +19,7 @@ const Skills = ()=>{
             <h1>My Skills</h1>
             <h5>Professional Skills</h5>
                 <div className="row" style={{width:'100%'}}>
-                    <div className="col-lg-6" style={{paddingLeft:'2em'}}>
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12" style={{paddingLeft:'2em'}}>
                         <h4>Coding Skills</h4>
                             {coding.map((item) => (
                                 <div key={item.id}>
@@ -28,7 +28,7 @@ const Skills = ()=>{
                                 </div>
                             ))}
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12" style={{paddingLeft:'2em'}}>
                         <h4>Design Skills</h4>
                         {design.map((item) => (
                             <div key={item.id}>

@@ -8,7 +8,7 @@ const Service = () => {
                 <h1>What do I offer?</h1>
                 <h5>My Services</h5>
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div className={Styles.block}>
                             <div className={Styles.card}>
                                 <div className={Styles.serviceDev}></div>
@@ -16,7 +16,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div className={Styles.block}>
                             <div className={Styles.card}>
                                 <div className={Styles.serviceDesign}></div>
@@ -24,7 +24,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div className={Styles.block}>
                             <div className={Styles.card}>
                                 <div className={Styles.serviceSeo}></div>

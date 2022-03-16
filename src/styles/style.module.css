@@ -49,25 +49,36 @@ button {
   transition: all 0.3s;
 }
 .button-primary {
+  text-decoration: none;
   background-color: var(--primary-color);
   border: 1px solid #d6225a;
   color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
 }
 .button-primary:hover {
   background-color: white;
   color: var(--primary-color);
-  margin-top: -10px;
+
 }
 .button-primary-outlined {
+  text-decoration: none;
   background-color: white;
   border: 1px solid #d6225a;
   color: var(--primary-color);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
 }
+
 .button-primary-outlined:hover {
   background-color: var(--primary-color);
   border: 1px solid #d6225a;
   color: white;
-  margin-top: -10px;
+  
 }
 .button-secondary {
   background-color: var(--secondary-color);
@@ -77,7 +88,7 @@ button {
 .button-secondary:hover {
   background-color: white;
   color: var(--secondary-color);
-  margin-top: -10px;
+ 
 }
 .social-links {
   margin-top: 3em;
@@ -733,10 +744,52 @@ button {
 	height: 5px;
 	background: white;
 	border-radius: 50px;
-	right: 14%;
+	right: 11%;
 	top: 34.5%;
 	position: absolute;
 }
-.overlay button{
-  margin-top: 60px;
+.overlay a{
+  margin: 1em;
+}
+
+/***Satisfied Clients***/
+.clients{
+  margin: 2em 0 2em 0;
+}
+.clients h1{
+  color: var(--secondary-color);
+  text-align: center;
+  font-weight: 600;
+}
+.clients h5{
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 500;
+}
+/***Footer***/
+.footer{
+  height: fit-content;
+  background-color: var(--secondary-color);
+  padding: 3em;
+  color: white;
+  font-size: 17px;
+}
+.footer li{
+  list-style: none;
+}
+.footer li a{
+  color: white;
+}
+.footer h5{
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer h5::after{
+  content: '';
+  display: block;
+  position: relative;
+  height: 4px;
+  width: 80px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
 }

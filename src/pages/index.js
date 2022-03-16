@@ -9,6 +9,8 @@ import Skills from "../constants/skills";
 import Funfact from "../components/Funfact";
 import FeaturedWork from "../components/featuredWork";
 import Parallex from "../constants/parallex";
+import Clients from "../components/clients";
+import Footer from "../components/footer";
 
 const Home = () =>{
   return(
@@ -34,6 +36,8 @@ const Home = () =>{
         <Funfact/>
         <FeaturedWork/>
         <Parallex/>
+        <Clients/>
+        <Footer/>
 
     </>
   );

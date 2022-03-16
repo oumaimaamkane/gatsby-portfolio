@@ -6,16 +6,8 @@ import * as Styles from '../styles/style.module.css';
 import classnames from 'classnames';
 import {StaticImage } from "gatsby-plugin-image";
 const FeaturedWork = () =>{
-    // var settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 2,
-    //     slidesToScroll: 2
-    //   };
     const responsive = {
             superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
             },
@@ -38,8 +30,8 @@ const FeaturedWork = () =>{
         <div className={Styles.clientWork}>
             <h6>Clients Projects</h6>
             <Carousel
-            swipeable={false}
-            draggable={false}
+            swipeable={true}
+            draggable={true}
             responsive={responsive}
             ssr={true} // means to render carousel on server-side.
             infinite={true}
@@ -83,8 +75,17 @@ const FeaturedWork = () =>{
                     <StaticImage src='../images/work/betrap.png' alt="Betrap" style={{width:"250px" , height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto'}}/>
                 </div>
                 <div className="card-body">
-                    <h6><a target='_blank' href="http://www.betrap.ma" rel="noreferrer">Bilker Deutsche Schule</a></h6>
-                    <p>Sanitry DistributionCompany in Agadir</p>
+                    <h6><a target='_blank' href="http://www.betrap.ma" rel="noreferrer">Betrap</a></h6>
+                    <p>Sanitry Distribution Company in Agadir</p>
+                </div>
+            </div>
+            <div className="card" style ={{marginRight:'15px' , width:'300px'}}>
+                <div className="card-header">
+                    <StaticImage src='../images/work/LOGO-OZAMA.png' alt="ozama" style={{width:"250px" , height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto'}}/>
+                </div>
+                <div className="card-body">
+                    <h6><a target='_blank' href="http://ozama.epizy.com" rel="noreferrer">Ozama</a></h6>
+                    <p>Designer Portfolio</p>
                 </div>
             </div>
             

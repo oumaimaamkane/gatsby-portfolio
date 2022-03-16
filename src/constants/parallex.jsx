@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames';
 import * as Styles from '../styles/style.module.css';
 import {FaArrowRight} from 'react-icons/fa';
 const Parallex = () =>{
@@ -8,8 +7,9 @@ const Parallex = () =>{
             <div className={Styles.overlay}>
                 <h5>Meet Me</h5>
                 <h1>Ready to get any projects</h1>
-                <button className={Styles.buttonPrimary}>Contact Me <FaArrowRight/> </button>
-                <button className={Styles.buttonPrimaryOutlined}>My Projects <FaArrowRight/> </button>
+                <br/>
+                <a className={Styles.buttonPrimary} href="/contact">Contact Me <FaArrowRight/></a>
+                <a className={Styles.buttonPrimaryOutlined} href="/portfolio">My Projects <FaArrowRight/></a>
             </div>
         </div>
     );
