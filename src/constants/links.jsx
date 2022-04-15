@@ -31,13 +31,13 @@ const data =[
 ];
 const links = data.map(link =>{
     return(
-        <NavLink className={Style.navLink} key={link.id} to={link.url}>{link.text}</NavLink>
+        <NavLink className={Style.navLink} key={link.id} href={link.url}>{link.text}</NavLink>
     );
 })
 const Headerlink=(props)=>{
     return(
         <Nav id={props.id}>
-        {links}
+            {links}
         </Nav>
     );
 }

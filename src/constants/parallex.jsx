@@ -8,8 +8,10 @@ const Parallex = () =>{
                 <h5>Meet Me</h5>
                 <h1>Ready to get any projects</h1>
                 <br/>
-                <a className={Styles.buttonPrimary} href="/contact">Contact Me <FaArrowRight/></a>
-                <a className={Styles.buttonPrimaryOutlined} href="/portfolio">My Projects <FaArrowRight/></a>
+                <div className={Styles.parallex2ButtonGroup}>
+                    <a className={Styles.buttonPrimary} href="/contact">Contact Me <FaArrowRight/></a>
+                    <a className={Styles.buttonPrimaryOutlined} href="/portfolio">My Projects <FaArrowRight/></a>
+                </div>
             </div>
         </div>
     );

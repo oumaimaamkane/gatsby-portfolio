@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Styles from '../styles/style.module.css';
 import ProgressBar from '../constants/progress-bar.jsx';
-
+import { Container , Row , Col } from 'react-bootstrap';
 const Skills = ()=>{
     const coding = [
         {id:'1', title: 'HTML5/CSS3',bgcolor: "#d6225a", completed: 100 },
@@ -18,8 +18,9 @@ const Skills = ()=>{
         <div className={Styles.skills}>
             <h1>My Skills</h1>
             <h5>Professional Skills</h5>
-                <div className="row" style={{width:'100%'}}>
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12" style={{paddingLeft:'2em'}}>
+            <Container>
+                <Row>
+                    <Col lg={6} md={6}>
                         <h4>Coding Skills</h4>
                             {coding.map((item) => (
                                 <div key={item.id}>
@@ -27,8 +28,8 @@ const Skills = ()=>{
                                 <ProgressBar  bgcolor={item.bgcolor} completed={item.completed} />
                                 </div>
                             ))}
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12" style={{paddingLeft:'2em'}}>
+                    </Col>
+                    <Col lg={6} md={6}>
                         <h4>Design Skills</h4>
                         {design.map((item) => (
                             <div key={item.id}>
@@ -36,8 +37,9 @@ const Skills = ()=>{
                                 <ProgressBar bgcolor={item.bgcolor} completed={item.completed} />
                             </div>
                         ))}
-                    </div>
-                </div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

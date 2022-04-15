@@ -1,10 +1,10 @@
 import React from "react";
-//import Slider from "react-slick";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import * as Styles from '../styles/style.module.css';
 import classnames from 'classnames';
 import {StaticImage } from "gatsby-plugin-image";
+import {Card} from 'react-bootstrap';
 const FeaturedWork = () =>{
     const responsive = {
             superLargeDesktop: {
@@ -39,56 +39,43 @@ const FeaturedWork = () =>{
             keyBoardControl={true}
             customTransition="all .5"
             transitionDuration={500}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
             itemClass="carousel-item-margin-40-px"
             >
-            <div className="card" style ={{marginRight:'15px' ,width:'300px'}}>
-                <div className="card-header">
-                    <StaticImage src='../images/work/hamzapub.png' alt="Or Hamza Pub" style={{width:"250px" ,height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto'}}/>
-                </div>
-                <div className="card-body">
-                    <h6><a target='_blank' href="https://www.orhamzapub.com" rel="noreferrer">Or Hamza Pub</a></h6>
-                    <p>Digital Agency in Oujda</p>
-                </div>
-            </div>
-            <div className="card" style ={{marginRight:'15px' , width:'300px'}}>
-                <div className="card-header">
-                    <StaticImage src='../images/work/bilker-school.png' alt="Bilker" style={{width:"250px" , height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto', objectFit:'contain',}}/>
-                </div>
-                <div className="card-body">
-                    <h6><a target='_blank' href="https://www.bilker.ma" rel="noreferrer">Bilker Deutsche Schule</a></h6>
-                    <p>German School in Agadir</p>
-                </div>
-            </div>
-            <div className="card" style ={{marginRight:'15px' , width:'300px'}}>
-                <div className="card-header">
-                    <StaticImage src='../images/work/bilker-orient.png' alt="Bilker" style={{width:"250px" , height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto' , objectFit:'contain'}}/>
-                </div>
-                <div className="card-body">
-                    <h6><a target='_blank' href="http://www.bilker-orient.com" rel="noreferrer">Bilker Orient</a></h6>
-                    <p>German Company in Germany</p>
-                </div>
-            </div>
-            <div className="card" style ={{marginRight:'15px' , width:'300px'}}>
-                <div className="card-header">
-                    <StaticImage src='../images/work/betrap.png' alt="Betrap" style={{width:"250px" , height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto'}}/>
-                </div>
-                <div className="card-body">
-                    <h6><a target='_blank' href="http://www.betrap.ma" rel="noreferrer">Betrap</a></h6>
-                    <p>Sanitry Distribution Company in Agadir</p>
-                </div>
-            </div>
-            <div className="card" style ={{marginRight:'15px' , width:'300px'}}>
-                <div className="card-header">
-                    <StaticImage src='../images/work/LOGO-OZAMA.png' alt="ozama" style={{width:"250px" , height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto'}}/>
-                </div>
-                <div className="card-body">
-                    <h6><a target='_blank' href="http://ozama.epizy.com" rel="noreferrer">Ozama</a></h6>
-                    <p>Designer Portfolio</p>
-                </div>
-            </div>
-            
+                <Card style={{marginRight:'2em'}}>
+                    <StaticImage src='../images/work/hamzapub.png' alt="Or Hamza Pub" className="card-img-top" style={{width:'100%', height:'500px',objectFit:'cover' }}/>
+                    <Card.Body>
+                        <Card.Title><h6><a target='_blank' href="https://www.orhamzapub.com" rel="noreferrer">Or Hamza Pub</a></h6></Card.Title>
+                        <Card.Text>Digital Agency in Oujda</Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card style={{marginRight:'2em'}}>
+                <StaticImage src='../images/work/bilker-orient.png' alt="Bilker" style={{ width:'100%', height:'500px',objectFit:'cover'}}/>
+                    <Card.Body>
+                        <Card.Title><h6><a target='_blank' href="https://www.bilker.ma" rel="noreferrer">Bilker Deutsche Schule</a></h6></Card.Title>
+                        <Card.Text>German School in Agadir</Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card style={{marginRight:'2em'}}>
+                <StaticImage src='../images/work/bilker-orient.png' alt="Bilker" style={{ width:'100%', height:'500px',objectFit:'cover'}}/>
+                    <Card.Body>
+                        <Card.Title><h6><a target='_blank' href="http://www.bilker-orient.com" rel="noreferrer">Bilker Orient</a></h6></Card.Title>
+                        <Card.Text>German Company in Germany</Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card style={{marginRight:'2em'}}>
+                <StaticImage src='../images/work/betrap1.png' alt="Betrap" style={{ width:'100%', height:'500px',objectFit:'cover', marginLeft:'auto' , marginRight:'auto'}}/>
+                    <Card.Body>
+                        <Card.Title><h6><a target='_blank' href="http://www.betrap.ma" rel="noreferrer">Betrap</a></h6></Card.Title>
+                        <Card.Text>Sanitry Distribution Company in Agadir</Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card style={{marginRight:'2em'}}>
+                <StaticImage src='../images/work/LOGO-OZAMA.png' alt="ozama" style={{ width:'100%', height:'500px',objectFit:'cover',marginLeft:'auto' , marginRight:'auto'}}/>
+                    <Card.Body>
+                        <Card.Title><h6><a target='_blank' href="http://ozama.epizy.com" rel="noreferrer">Ozama</a></h6></Card.Title>
+                        <Card.Text>Designer Portfolio</Card.Text>
+                    </Card.Body>
+                </Card>
             </Carousel>
         </div>
         <div className={Styles.sideWork}>
@@ -104,27 +91,22 @@ const FeaturedWork = () =>{
             customTransition="all .5"
             transitionDuration={500}
             containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
             itemClass="carousel-item-margin-40-px"
             >
-            <div className="card" style ={{marginRight:'15px' ,width:'300px'}}>
-                <div className="card-header">
-                    <StaticImage src='../images/work/tarragt.png' alt="tarragt" style={{width:"250px" ,height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto'}}/>
-                </div>
-                <div className="card-body">
-                    <h6><a target='_blank' href="https://www.instagram.com/tarragt.ma/" rel="noreferrer">Tarragt</a></h6>
-                    <p>Make Personalised Gifts</p>
-                </div>
-            </div>
-            <div className="card" style ={{marginRight:'15px' , width:'300px'}}>
-                <div className="card-header">
-                    <StaticImage src='../images/work/bookiliya.png' alt="tarragt" style={{width:"250px" , height:'270px', display:'block' , marginLeft:'auto' , marginRight:'auto'}}/>
-                </div>
-                <div className="card-body">
-                    <h6><a target='_blank' href="http://www.bookylia.com" rel="noreferrer">Bookylia</a></h6>
-                    <p>Book your hairdresser online</p>
-                </div>
-            </div>
+                <Card style={{marginRight:'2em'}}>
+                    <StaticImage src='../images/work/tarragt.png' alt="tarragt" style={{ width:'100%', height:'500px',objectFit:'cover',marginLeft:'auto' , marginRight:'auto'}}/>
+                    <Card.Body>
+                        <Card.Title><h6><a target='_blank' href="https://www.instagram.com/tarragt.ma/" rel="noreferrer">Tarragt</a></h6></Card.Title>
+                        <Card.Text>Make Personalised Gifts</Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card style={{marginRight:'2em'}}>
+                    <StaticImage src='../images/work/bookiliya.png' alt="Bookylia" style={{ width:'100%', height:'500px',objectFit:'cover',marginLeft:'auto' , marginRight:'auto'}}/>
+                    <Card.Body>
+                        <Card.Title><h6><a target='_blank' href="https://www.instagram.com/tarragt.ma/" rel="noreferrer">Bookylia</a></h6></Card.Title>
+                        <Card.Text>Book your hairdresser online</Card.Text>
+                    </Card.Body>
+                </Card>
             
             </Carousel>
         </div>

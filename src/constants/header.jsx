@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand ,Container} from "react-bootstrap";
-import Headerlink from "../constants/links";
+import Headerlink from "./links";
 import * as Style from "../styles/style.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 
